@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Room Scan - ARchitech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      body {
+        background: #F5F0E6;
+        color: #111;
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+      }
+
+      .hero {
+        padding: 120px 0;
+        text-align: center;
+        background: #F5F0E6;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        opacity: 0.8;
+      }
+
+      .feature-image {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 25px rgba(0, 255, 200, 0.2);
+        transform: translateY(0px);
+        transition: 0.5s ease;
+      }
+
+      .feature-image:hover {
+        transform: translateY(-10px) scale(1.03);
+      }
+
+      .section-title {
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+
+      .step-box {
+        background: #fff;
+        color: #111;
+        padding: 25px;
+        border-radius: 18px;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+        transition: 0.3s ease;
+      }
+
+      .step-box:hover {
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+        transform: translateY(-5px);
+      }
+
+      #three-obj {
+        width: 100%;
+        height: 400px;
+        margin-top: 30px;
+        border-radius: 15px; 
+        overflow: hidden;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Holographic Floor Grid -->
+    <div class="holo-grid-container" aria-hidden="true">
+      <div class="hero-holo-grid">
+        <span class="grid-plane"></span>
+        <span class="grid-plane grid-plane--blur"></span>
+      </div>
+
+      <div class="hero-light-beams">
+        <span class="beam beam-one"></span>
+        <span class="beam beam-two"></span>
+        <span class="beam beam-three"></span>
+      </div>
+    </div>
+
+    <section class="hero" data-aos="zoom-in">
+      <div class="container">
+        <h1>3D Room Scan</h1>
+        <p>Capture your room in stunning detail using Augmented Reality scanning technology.</p>
+        <img src="assets/img/room-scan.jpg" class="feature-image mt-4" alt="3D Furniture Scan Image" style="max-height: 700px; object-fit: cover;"/>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">How 3D Room Scanning Works</h2>
+        <p class="text-center mb-4" data-aos="fade-up" data-aos-delay="100">Our AR technology builds a 3D model of your room using visual and depth tracking. Here’s what happens during the scan:</p>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-right">
+            <div class="step-box">
+              <h4>1. Room Surface Detection</h4>
+              <p>Identify walls, floors, and ceilings using your device camera for accurate room mapping.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up">
+            <div class="step-box">
+              <h4>2. 3D Mesh Generation</h4>
+              <p>Build a digital 3D model of the entire room capturing geometry and dimentions.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-left">
+            <div class="step-box">
+              <h4>3. Detail & Texture Capture</h4>
+              <p>Record textures, colors, and small objects for a realistic room representation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">How to Scan Your Room</h2>
+        <div class="row g-4 mt-3 justify-content-center">
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="step-box">
+              <h4>Step-by-step Guide</h4>
+              <ul>
+                <li>Open the 3D Room Scan feature in the app.</li>
+                <li>Move your device slowly around the room to detect walls, floors, and ceilings.</li>
+                <li>Capture all corners and objects to create a complete 3D model.</li>
+                <li>Preview the scanned room in 3D and make adjustments if needed.</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
